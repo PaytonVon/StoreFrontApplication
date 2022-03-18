@@ -117,68 +117,521 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="_Assets\about.html" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="_Assets\assets\css\all.min.css" />
+    <Content Include="_Assets\assets\css\animate.css" />
+    <Content Include="_Assets\assets\css\magnific-popup.css" />
+    <Content Include="_Assets\assets\css\main.css" />
+    <Content Include="_Assets\assets\css\meanmenu.min.css" />
+    <Content Include="_Assets\assets\css\owl.carousel.css" />
+    <Content Include="_Assets\assets\css\responsive.css" />
+    <Content Include="_Assets\assets\css\scss\pages\_404.css" />
+    <Content Include="_Assets\assets\img\1.jpg" />
+    <Content Include="_Assets\assets\img\a.jpg" />
+    <Content Include="_Assets\assets\img\feature-bg.jpg" />
+    <Content Include="_Assets\assets\img\avaters\avatar1.png" />
+    <Content Include="_Assets\assets\img\avaters\avatar2.png" />
+    <Content Include="_Assets\assets\img\avaters\avatar3.png" />
+    <Content Include="_Assets\assets\img\breadcrumb-bg.jpg" />
+    <Content Include="_Assets\assets\img\company-logos\1.png" />
+    <Content Include="_Assets\assets\img\company-logos\2.png" />
+    <Content Include="_Assets\assets\img\company-logos\3.png" />
+    <Content Include="_Assets\assets\img\company-logos\4.png" />
+    <Content Include="_Assets\assets\img\company-logos\5.png" />
+    <Content Include="_Assets\assets\img\dd.jpg" />
+    <Content Include="_Assets\assets\img\favicon.png" />
+    <Content Include="_Assets\assets\img\hero-bg-2.jpg" />
+    <Content Include="_Assets\assets\img\hero-bg-3.jpg" />
+    <Content Include="_Assets\assets\img\hero-bg.jpg" />
+    <Content Include="_Assets\assets\img\homepage-bg-pattern.png" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-1.jpg" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-2.jpg" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-3.jpg" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-4.jpg" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-5.jpg" />
+    <Content Include="_Assets\assets\img\latest-news\news-bg-6.jpg" />
+    <Content Include="_Assets\assets\img\logo.png" />
+    <Content Include="_Assets\assets\img\products\product-img-2.jpg" />
+    <Content Include="_Assets\assets\img\products\product-img-3.jpg" />
+    <Content Include="_Assets\assets\img\products\product-img-4.jpg" />
+    <Content Include="_Assets\assets\img\products\product-img-5.jpg" />
+    <Content Include="_Assets\assets\img\products\product-img-6.jpg" />
+    <Content Include="_Assets\assets\img\products\product-img-1.jpg" />
+    <Content Include="_Assets\assets\img\team\team-1.jpg" />
+    <Content Include="_Assets\assets\img\team\team-2.jpg" />
+    <Content Include="_Assets\assets\img\team\team-3.jpg" />
+    <Content Include="_Assets\assets\js\form-validate.js" />
+    <Content Include="_Assets\assets\js\jquery-1.11.3.min.js" />
+    <Content Include="_Assets\assets\js\jquery.countdown.js" />
+    <Content Include="_Assets\assets\js\jquery.isotope-3.0.6.min.js" />
+    <Content Include="_Assets\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="_Assets\assets\js\jquery.meanmenu.min.js" />
+    <Content Include="_Assets\assets\js\main.js" />
+    <Content Include="_Assets\assets\js\owl.carousel.min.js" />
+    <Content Include="_Assets\assets\js\sticker.js" />
+    <Content Include="_Assets\assets\js\waypoints.js" />
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.svg" />
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.svg" />
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.svg" />
+    <Content Include="_Assets\cart.html" />
+    <Content Include="_Assets\checkout.html" />
+    <Content Include="_Assets\contact.html" />
+    <Content Include="_Assets\help-documentation\css\et-line-font\et-line-font.css" />
+    <Content Include="_Assets\help-documentation\css\et-line-font\fonts\et-line.svg" />
+    <Content Include="_Assets\help-documentation\css\font-awesome\css\font-awesome.css" />
+    <Content Include="_Assets\help-documentation\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="_Assets\help-documentation\css\main.css" />
+    <Content Include="_Assets\help-documentation\css\responsive-leyouts.css" />
+    <Content Include="_Assets\help-documentation\images\favicon.png" />
+    <Content Include="_Assets\help-documentation\IMD-License.txt" />
+    <Content Include="_Assets\help-documentation\index.html" />
+    <Content Include="_Assets\help-documentation\js\jhighlight\jquery.highlight.css" />
+    <Content Include="_Assets\help-documentation\js\jhighlight\jquery.highlight.js" />
+    <Content Include="_Assets\help-documentation\js\pagescroll\animatescroll.js" />
+    <Content Include="_Assets\help-documentation\js\pagescroll\animatescroll.min.js" />
+    <Content Include="_Assets\help-documentation\js\pagescroll\animatescroll.noeasing.js" />
+    <Content Include="_Assets\help-documentation\js\pagescroll\custom.css" />
+    <Content Include="_Assets\help-documentation\js\pagescroll\jquery-1.8.3.min.js" />
+    <Content Include="_Assets\help-documentation\js\universal\jquery.js" />
+    <Content Include="_Assets\index.html" />
+    <Content Include="_Assets\mail.php" />
+    <Content Include="_Assets\news.html" />
+    <Content Include="_Assets\shop.html" />
+    <Content Include="_Assets\single-news.html" />
+    <Content Include="_Assets\single-product.html" />
+    <Content Include="_Archive\404.html" />
+    <Content Include="_Archive\about.html" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="_Archive\assets\css\all.min.css" />
+    <Content Include="_Archive\assets\css\animate.css" />
+    <Content Include="_Archive\assets\css\magnific-popup.css" />
+    <Content Include="_Archive\assets\css\main.css" />
+    <Content Include="_Archive\assets\css\meanmenu.min.css" />
+    <Content Include="_Archive\assets\css\owl.carousel.css" />
+    <Content Include="_Archive\assets\css\responsive.css" />
+    <Content Include="_Archive\assets\css\scss\pages\_404.css" />
+    <Content Include="_Archive\assets\img\1.jpg" />
+    <Content Include="_Archive\assets\img\a.jpg" />
+    <Content Include="_Archive\assets\img\abt.jpg" />
+    <Content Include="_Archive\assets\img\avaters\avatar1.png" />
+    <Content Include="_Archive\assets\img\avaters\avatar2.png" />
+    <Content Include="_Archive\assets\img\avaters\avatar3.png" />
+    <Content Include="_Archive\assets\img\breadcrumb-bg.jpg" />
+    <Content Include="_Archive\assets\img\company-logos\1.png" />
+    <Content Include="_Archive\assets\img\company-logos\2.png" />
+    <Content Include="_Archive\assets\img\company-logos\3.png" />
+    <Content Include="_Archive\assets\img\company-logos\4.png" />
+    <Content Include="_Archive\assets\img\company-logos\5.png" />
+    <Content Include="_Archive\assets\img\dd.jpg" />
+    <Content Include="_Archive\assets\img\favicon.png" />
+    <Content Include="_Archive\assets\img\feature-bg.jpg" />
+    <Content Include="_Archive\assets\img\hero-bg-2.jpg" />
+    <Content Include="_Archive\assets\img\hero-bg-3.jpg" />
+    <Content Include="_Archive\assets\img\hero-bg.jpg" />
+    <Content Include="_Archive\assets\img\homepage-bg-pattern.png" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-1.jpg" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-2.jpg" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-3.jpg" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-4.jpg" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-5.jpg" />
+    <Content Include="_Archive\assets\img\latest-news\news-bg-6.jpg" />
+    <Content Include="_Archive\assets\img\logo.png" />
+    <Content Include="_Archive\assets\img\products\product-img-1.jpg" />
+    <Content Include="_Archive\assets\img\products\product-img-2.jpg" />
+    <Content Include="_Archive\assets\img\products\product-img-3.jpg" />
+    <Content Include="_Archive\assets\img\products\product-img-4.jpg" />
+    <Content Include="_Archive\assets\img\products\product-img-5.jpg" />
+    <Content Include="_Archive\assets\img\products\product-img-6.jpg" />
+    <Content Include="_Archive\assets\img\team\team-1.jpg" />
+    <Content Include="_Archive\assets\img\team\team-2.jpg" />
+    <Content Include="_Archive\assets\img\team\team-3.jpg" />
+    <Content Include="_Archive\assets\js\form-validate.js" />
+    <Content Include="_Archive\assets\js\jquery-1.11.3.min.js" />
+    <Content Include="_Archive\assets\js\jquery.countdown.js" />
+    <Content Include="_Archive\assets\js\jquery.isotope-3.0.6.min.js" />
+    <Content Include="_Archive\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="_Archive\assets\js\jquery.meanmenu.min.js" />
+    <Content Include="_Archive\assets\js\main.js" />
+    <Content Include="_Archive\assets\js\owl.carousel.min.js" />
+    <Content Include="_Archive\assets\js\sticker.js" />
+    <Content Include="_Archive\assets\js\waypoints.js" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.svg" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.svg" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.svg" />
+    <Content Include="_Archive\cart.html" />
+    <Content Include="_Archive\checkout.html" />
+    <Content Include="_Archive\contact.html" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\et-line-font.css" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\fonts\et-line.svg" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\css\font-awesome.css" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="_Archive\help-documentation\css\main.css" />
+    <Content Include="_Archive\help-documentation\css\responsive-leyouts.css" />
+    <Content Include="_Archive\help-documentation\images\favicon.png" />
+    <Content Include="_Archive\help-documentation\IMD-License.txt" />
+    <Content Include="_Archive\help-documentation\index.html" />
+    <Content Include="_Archive\help-documentation\js\jhighlight\jquery.highlight.css" />
+    <Content Include="_Archive\help-documentation\js\jhighlight\jquery.highlight.js" />
+    <Content Include="_Archive\help-documentation\js\pagescroll\animatescroll.js" />
+    <Content Include="_Archive\help-documentation\js\pagescroll\animatescroll.min.js" />
+    <Content Include="_Archive\help-documentation\js\pagescroll\animatescroll.noeasing.js" />
+    <Content Include="_Archive\help-documentation\js\pagescroll\custom.css" />
+    <Content Include="_Archive\help-documentation\js\pagescroll\jquery-1.8.3.min.js" />
+    <Content Include="_Archive\help-documentation\js\universal\jquery.js" />
+    <Content Include="_Archive\index.html" />
+    <Content Include="_Archive\mail.php" />
+    <Content Include="_Archive\news.html" />
+    <Content Include="_Archive\shop.html" />
+    <Content Include="_Archive\single-news.html" />
+    <Content Include="_Archive\single-product.html" />
+    <Content Include="_Archive\.gitattributes" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="_Archive\assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.js.map" />
+    <Content Include="_Archive\assets\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="_Archive\assets\css\scss\base\_mixins.scss" />
+    <Content Include="_Archive\assets\css\scss\base\_typography.scss" />
+    <Content Include="_Archive\assets\css\scss\base\_variables.scss" />
+    <Content Include="_Archive\assets\css\scss\common\_common.scss" />
+    <Content Include="_Archive\assets\css\scss\common\_footer.scss" />
+    <Content Include="_Archive\assets\css\scss\common\_header.scss" />
+    <Content Include="_Archive\assets\css\scss\common\_hover.scss" />
+    <Content Include="_Archive\assets\css\scss\main.scss" />
+    <Content Include="_Archive\assets\css\scss\pages\_404.scss" />
+    <Content Include="_Archive\assets\css\scss\pages\_about.scss" />
+    <Content Include="_Archive\assets\css\scss\pages\_contact.scss" />
+    <Content Include="_Archive\assets\css\scss\pages\_shop.scss" />
+    <Content Include="_Archive\assets\css\scss\prepros-6.config" />
+    <Content Include="_Archive\assets\css\scss\sections\_about.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_cart-banner.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_hero.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_list.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_news.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_shop-banner.scss" />
+    <Content Include="_Archive\assets\css\scss\sections\_testimonials.scss" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.eot" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.eot_" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.woff" />
+    <Content Include="_Archive\assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.eot" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.eot_" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.woff" />
+    <Content Include="_Archive\assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.eot" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.eot_" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.woff" />
+    <Content Include="_Archive\assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\fonts\.DS_Store" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\fonts\et-line.eot" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\fonts\et-line.ttf" />
+    <Content Include="_Archive\help-documentation\css\et-line-font\fonts\et-line.woff" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\animated.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\bordered-pulled.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\core.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\fixed-width.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\font-awesome.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\icons.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\larger.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\list.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\mixins.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\path.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\rotated-flipped.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\stacked.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\less\variables.less" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\font-awesome.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_animated.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_core.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_icons.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_larger.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_list.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_mixins.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_path.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_stacked.scss" />
+    <Content Include="_Archive\help-documentation\css\font-awesome\scss\_variables.scss" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Content Include="_Assets\.gitattributes" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-grid.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-grid.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-reboot.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\css\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.bundle.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.bundle.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\bootstrap\js\bootstrap.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\base\_mixins.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\base\_typography.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\base\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\common\_common.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\common\_footer.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\common\_header.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\common\_hover.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\main.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\pages\_404.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\pages\_about.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\pages\_contact.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\pages\_shop.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\prepros-6.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_about.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_cart-banner.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_hero.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_list.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_news.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_shop-banner.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\css\scss\sections\_testimonials.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.eot_" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-brands-400.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.eot_" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-regular-400.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.eot_" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\assets\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\et-line-font\fonts\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\et-line-font\fonts\et-line.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\et-line-font\fonts\et-line.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\et-line-font\fonts\et-line.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\fontawesome-webfont.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\animated.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\bordered-pulled.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\core.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\fixed-width.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\icons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\larger.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\list.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\path.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\rotated-flipped.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\stacked.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\less\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_animated.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_bordered-pulled.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_core.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_fixed-width.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_icons.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_larger.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_list.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_mixins.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_path.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_rotated-flipped.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_stacked.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Assets\help-documentation\css\font-awesome\scss\font-awesome.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
